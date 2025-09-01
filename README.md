@@ -6,15 +6,10 @@ It showcases my skills, projects, and provides an easy way to get in touch with 
 ---
 
 ## 🚀 Live Demo  
-🔗 [View Portfolio](# 🌐 My Portfolio Website
+🔗 [View Portfolio](https://awadahmad251.github.io/Personal-Portfolio/)
 
 This is my personal **portfolio website** built with **HTML, CSS, and JavaScript**.  
 It showcases my skills, projects, and provides an easy way to get in touch with me.  
-
----
-
-## 🚀 Live Demo  
-🔗 [View Portfolio](https://awadahmad251.github.io/Personal-Portfolio/)
 
 ---
 
