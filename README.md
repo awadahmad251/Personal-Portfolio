@@ -14,7 +14,7 @@ It showcases my skills, projects, and provides an easy way to get in touch with 
 ---
 
 ## 🚀 Live Demo  
-🔗 [View Portfolio](own-portfolio1.netlify.app)  
+🔗 [View Portfolio](https://awadahmad251.github.io/Personal-Portfolio/)
 
 ---
 
