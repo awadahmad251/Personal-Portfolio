@@ -35,7 +35,16 @@ It showcases my skills, projects, and provides an easy way to get in touch with 
 ---
 
 ## 📂 Project Structure
-)  
+  portfolio/
+│── index.html # Main HTML file
+│── style.css # Stylesheet
+│── script.js # JavaScript file
+│
+├── assets/ # Images, icons, etc.
+│ ├── profile.jpg
+│ ├── github.png
+│ ├── linkedin.png
+│ └── other-images...
 
 ---
 
@@ -55,4 +64,4 @@ It showcases my skills, projects, and provides an easy way to get in touch with 
 
 ---
 
-## 📂 Project Structure
+
