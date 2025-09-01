@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <h1>Awad Ahmad.</h1>
+        <nav class="navbar">
+            <button class="hamburger" id="hamburger">&#9776;</button>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <button class="hire-btn"
+                    onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Hire
+                    Me</button> <!-- 🌙 Dark mode toggle button -->
+                <button id="dark-toggle" class="dark-btn">🌙</button>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- home -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h2>I Am <br><span>Web Designer</span></h2>
+            <p>I am a web developer, proficient in coding and maintaining
+                websites to ensure optimal performance and user experience.
+            </p>
+
+            <a href="assets/cv.pdf" download class="cv">📄 Download CV</a>
+
+        </div>
+        <div class="myimage">
+            <img src="images/pf.jpeg" alt="Profile Picture">
+        </div>
+
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+        <h1>My Services</h1>
+        <div class="services-container">
+            <div class="service-card">
+                <h3>Web Design</h3>
+                <p>I create responsive, modern and creative web designs.</p>
+            </div>
+            <div class="service-card">
+                <h3>Web Development</h3>
+                <p>Building dynamic and user-friendly websites with clean code.</p>
+            </div>
+            <div class="service-card">
+                <h3>SEO Optimization</h3>
+                <p>Optimizing websites for better performance and search ranking.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects -->
+    <section id="projects">
+        <h1>My Projects</h1>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="images/home2.png" alt="">
+                <h3>Wood Working Project</h3>
+                <p> A project showcasing intricate woodwork designs and craftsmanship.</p>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Responsive Design</span>
+                <br>
+                <a href="https://awadahmad251.github.io/woodwork-website/" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="images/home3.png" alt="">
+                <h3>My Portfolio</h3>
+                <p> A project demonstrating a responsive portfolio layout.</p>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Responsive Design</span>
+                <br>
+                <a href="https://awadahmad251.github.io/my-portfolio/" target="_blank">View Project</a>
+
+            </div>
+            <div class="project-card">
+                <img src="images/home1.png" alt="">
+                <h3>Personal-shape</h3>
+                <p>A showcase of my work and skills as a web developer.</p>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Responsive Design</span>
+                <br>
+                <a href="https://awadahmad251.github.io/Personal-shape/" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <p>If you have any questions or want to work together, feel free to reach out!</p>
+        <form name="contact" method="POST" data-netlify="true" action="/thank-you">
+             <input type="hidden" name="form-name" value="contact">
+            <input type="hidden" name="form-name" value="contact">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Awad Ahmad. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#home">Back to Top</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-socials">
+            <a href="https://github.com/awadahmad251" target="_blank"><img src="./images/github.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/awad-ahmad-ab1406313" target="_blank"><img src="images/linkedin.jpeg"
+                    alt="LinkedIn"></a>
+            <a href="https://www.facebook.com/share/19gVaxA64K/" target="_blank"><img src="images/facebook.jpg"
+                    alt="Facebook"></a>
+        </div>
+    </footer>
+    <script src="javascript.js"></script>
+</body>
+
+</html>

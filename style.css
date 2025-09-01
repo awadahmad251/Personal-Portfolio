@@ -1,0 +1,466 @@
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding:0%;
+    background: #ffffff;   /* default light */
+    color: #000000;
+    transition: background 0.4s, color 0.4s;
+    overflow-x: hidden;
+    /* background: linear-gradient(to right, aliceblue, lightblue); */
+    /* background-color: lightcyan; */
+
+}
+
+/* Dark mode */
+body.dark-mode {
+    background: #121212;
+    color: #ffffff;
+}
+
+header{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+       padding: 0 50px;
+}
+
+header h1{
+    font-size: 32px;
+    padding-top: 20px;
+    font-weight: bolder;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 18px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 28px;
+    margin-right: 32px;
+    padding-top: 26px;
+    align-items: center;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: color 0.4s;
+}
+
+
+body.dark-mode nav ul li a {
+    color: #f1f1f1; /* links white in dark mode */
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+    font-size: larger;
+}
+
+nav ul button{
+    border-radius: 25px;
+    background-color: burlywood;
+    font-weight: bolder;
+    width: 90px;
+    font-size: 16px;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin-left: 36px;
+}
+
+nav ul button:hover{
+    background-color: rgb(218, 165, 32);
+    cursor: pointer;
+}
+
+/* 🌙 Dark mode toggle button */
+.dark-btn {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: transform 0.3s, color 0.4s;
+    color: black;
+}
+
+.dark-btn:hover {
+    transform: rotate(20deg);
+}
+
+body.dark-mode .dark-btn {
+    color: white; /* moon icon white in dark mode */
+}
+
+/* home */
+#home{
+    padding-top: 60px;
+  background: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* width: 90%; */
+    padding-bottom: 60px;
+}
+body.dark-mode #home {
+    background: #1e1e1e;
+    border: 1px solid #333;
+}
+
+.hero{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding-left: 100px;
+}
+.hero-text {
+    max-width: 50%;
+}
+.hero-text h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-text h2 span {
+    color: purple; /* highlight */
+}
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.cv{
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bolder;
+    background-color: blue;
+    width: 150px;
+    border: 2px solid;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.myimage{
+    /* flex: 1; */
+    padding-right: 120px;
+}
+.myimage img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 4px solid purple;
+    transition: transform 0.3s;
+}
+
+/* services */
+#services{
+    padding-top: 40px;
+}
+#services h1{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    margin: 16px;
+}
+
+.service-card {
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+body.dark-mode .service-card {
+    background: #1e1e1e;
+    border: 1px solid #333;
+    color: #f1f1f1;
+}
+
+/* projects */
+#projects{
+    padding-top: 40px;
+}
+#projects h1{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    /* flex-direction: column; */
+    align-items: center;
+    margin: 16px;
+}
+
+.project-card {
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.project-card span {
+    display: inline-block;
+    /* margin: 5px 0; */
+    padding: 2px 6px;
+    border-radius: 16px;
+    margin: 8px;
+    background: #eee;
+    font-size: 16px;
+    font-weight: bolder;
+}
+body.dark-mode .project-card span {
+    background: #333;
+    color: #f1f1f1;
+}
+.project-card a{
+    text-decoration: none;
+    color: blue;
+    font-weight: bolder;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+body.dark-mode .project-card {
+    background: #1e1e1e;
+    border: 1px solid #333;
+    color: #f1f1f1;
+}
+
+/* contact */
+#contact {
+    padding: 40px 0;
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+body.dark-mode #contact {
+    background: #1e1e1e;
+    border: 1px solid #333;
+}
+#contact h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+#contact form input,
+#contact form textarea {
+    padding: 12px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    font-size: 16px;
+}
+#contact form button {
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background: blue;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+#contact form button:hover {
+    background: darkblue;
+}
+body.dark-mode #contact form button {
+    background: darkblue;
+}
+
+/* footer */
+footer {
+    padding: 40px 0;
+    background: #f9f9f9;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+body.dark-mode footer {
+    background: #1e1e1e;
+    border-top: 1px solid #333;
+}
+footer p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bolder;
+}
+.footer-links {
+    margin: 12px 0;
+}
+.footer-links a {
+    margin: 0 8px;
+    text-decoration: none;
+    color: blue;
+}
+.footer-socials {
+    margin-top: 12px;
+}
+.footer-socials a {
+    margin: 0 8px;
+}
+.footer-socials img {
+    width: 24px;
+    height: 24px;
+}
+
+/* media  */
+/* 📱 Responsive Styles */
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column-reverse; /* 👈 image first, then text + CV button */
+    text-align: center;
+    padding: 40px 20px;
+    align-items: center;  /* ✅ center everything horizontally */
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .myimage {
+    margin-bottom: 20px;        /* ✅ space between image and text */
+    padding-right: 0;           
+    display: flex;
+    justify-content: center;    /* ✅ center image */
+  }
+
+  .myimage img {
+    width: 220px;
+    height: 220px;
+  }
+
+  nav ul {
+    gap: 18px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    background: #f9f9f9;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    display: none; /* will add JS toggle later if you want a hamburger menu */
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .services-container,
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card,
+  .project-card {
+    width: 90%;
+  }
+
+  #contact form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 22px;
+  }
+  .hero-text h2 {
+    font-size: 26px;
+  }
+  .cv {
+    width: 120px;
+    font-size: 12px;
+  }
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+/* Hide hamburger on desktop */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+}
+body.dark-mode .hamburger {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    background: #f9f9f9;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    display: none; /* hidden by default */
+  }
+
+  nav ul.show {
+    display: flex; /* show when active */
+  }
+
+  body.dark-mode nav ul {
+    background: #1e1e1e;
+  }
+}
