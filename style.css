@@ -221,7 +221,8 @@ body.dark-mode .service-card {
     border: 1px solid #eee;
     border-radius: 8px;
     padding: 20px;
-    width: 30%;
+     height: 150px;
+    width: 300px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
@@ -464,3 +465,4 @@ body.dark-mode .hamburger {
     background: #1e1e1e;
   }
 }
+
